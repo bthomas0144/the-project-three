@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+/*Begin base styles*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*END base styles*/
+
+/*Begin form header*/
+
+.form-header,
+.title,
+.form-title {
+ 	text-align: center;
+	font-family: 'Vollkorn SC', serif;
+	 
+}
+
+.title {
+	background-color:#3F3F3F;
+	color: antiquewhite;
+	text-transform: uppercase;
+	padding: 25px;
+	margin-bottom: 25px;
+	
+}
+
+.form-header {
+	max-width: 90%;
+	margin: auto;
+	padding-bottom: 25px;
+	margin-bottom: 5px;
+	border-bottom: solid 4px black;
+}
+
+.form-title {
+	text-align: left;
+	margin: auto;
+	padding-top: 23px;
+	border-top: solid 1px black;
+	max-width: 90%;
+	
+}
+
+
+
+
+
+/*END form header*/
+
+
+/*Begin form*/
+fieldset {
+	border: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 0;
+	text-align: left;
+	padding-top: 10px;
+	font-family: 'Vollkorn SC', serif;
+	
+	
+	
+}
+
+legend {
+	border-top: solid 2px black;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Vollkorn SC', serif;
+	font-weight:bold;
+	
+}
+
+.input {
+	margin: 5px 0;
+	background: #EBEBEB;
+	border: none;
+	border-radius: 3px;
+	padding: 15px;
+	width:100%;
+
+}
+.input:hover {
+background: #6D85F4;
+}
+
+
