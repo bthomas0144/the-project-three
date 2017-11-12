@@ -19,24 +19,102 @@
 	
 	<div class="main-form">
 		<form>
-			<fieldset>
+			<fieldset class="field1">
 				<legend>Contact information</legend>
 				Full Name<br>
-				<input type="text" placeholder="Required" class="input"><br>
+				<input type="text" placeholder="Required" class="input" required><br>
 				Email<br>
-				<input type="email" placeholder="Required" class="input"><br>
+				<input type="email" placeholder="Required" class="input" required><br>
 				Phone<br>
-				<input type="tel" class="input"><br>
+				<input type="tel" class="input" placeholder="Required" required><br>
 				Street Address<br>
-				<input type="text" class="input"><br>
+				<input type="text" class="input" placeholder="Required" required><br>
 				City<br>
-				<input type="text" class="input"><br>
+				<input type="text" class="input" placeholder="Required" required><br>
 				State<br>
-				<input type="text" class="input"><br>
+				<select id="State" class="input">
+				<option value="none-selected" >Choose State</option>
+                  <option value="alabama">Alabama</option>
+                  <option value="alaska">Alaska</option>
+                  <option value="arizona">Arizona</option>
+                  <option value="arkansas">Arkansas</option>
+                  <option value="california">California</option>
+                  <option value="colorado">Colorado</option>
+                  <option value="connecticut">Connecticut</option>
+                  <option value="deleware">Deleware</option>
+                  <option value="florida">Florida</option>
+                  <option value="georgia">Georgia</option>
+                  <option value="hawaii">Hawaii</option>
+                  <option value="idaho">Idaho</option>
+                  <option value="illinois">Illinois</option>
+                  <option value="indiana">Indiana</option>
+                  <option value="iowa">Iowa</option>
+                  <option value="kansas">Kansas</option>
+                  <option value="kentucky">Kentucky</option>
+                  <option value="lousiana">Louisiana</option>
+                  <option value="maine">Maine</option>
+                  <option value="maryland">Maryland</option>
+                  <option value="massachusetts">Massachusetts</option>
+                  <option value="michigan">Michigan</option>
+                  <option value="minnesota">Minnesota</option>
+                  <option value="mississippi">Mississippi</option>
+                  <option value="missouri">Missouri</option>
+                  <option value="montana">Montana</option>
+                  <option value="nebraska">Nebraska</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="new hampshire">New Hampshire</option>
+                  <option value="new jersey">New Jersey</option>
+                  <option value="new mexico">New Mexico</option>
+                  <option value="new york">New York</option>
+                  <option value="north carolina">North Carolina</option>
+                  <option value="north dakota">North Dakota</option>
+                  <option value="ohio">Ohio</option>
+                  <option value="oklahoma">Oklahoma</option>
+                  <option value="oregon">Oregon</option>
+                  <option value="pennsylvania">Pennsylvania</option>
+                  <option value="rhode island">Rhode Island</option>
+                  <option value="south carolina">South Carolina</option>
+                  <option value="south dakota">South Dakota</option>
+                  <option value="tennessee">Tennessee</option>
+                  <option value="texas">Texas</option>
+                  <option value="utah">Utah</option>
+                  <option value="vermont">Vermont</option>
+                  <option value="virginia">Virginia</option>
+                  <option value="washington">Washington</option>
+                  <option value="west virginia">West Virginia</option>
+                  <option value="wisconsin">Wisconsin</option>
+                  <option value="wyoming">Wyoming</option>
+                </select><br />
 				Zip code<br>
-				<input type="number" class="input"><br>
+				<input type="text" class="input" id="zip" placeholder="Required" required><br>
 			</fieldset>
 			
+			<div class="news">
+			<fieldset>
+				<legend class=>Newsletter</legend>
+					<p>Select the type of news you would like to receive!</p>
+					<div class="checkbox">
+					<input type="checkbox" class="check" name="news"><label for="checkbox">HTML News</label>
+					<div>
+					<input type="checkbox" class="check" name="news"><label for="checkbox">CSS News</label>
+					</div>
+					<input type="checkbox" class="check" name="news"><label for="checkbox">Javascript News</label>
+					</div>
+					
+					<p> Newsletter format</p>
+					
+					<input type="radio" class="radio" name="radAnswer"><label for="radio">HTML</label><div></div>
+					<input type="radio" class="radio" name="radAnswer"><label for="radio">Plain Text</label>
+					
+					<p>Other topics you would like to discuss</p>
+					
+					<textarea class="input" id="textbox" placeholder="Tell us what you think our company can do to improve."></textarea>
+					
+					<button type="submit">Subscribe</button>
+		
+			
+				</fieldset>
+				</div>
 			
 		</form>
 		
@@ -47,7 +125,9 @@
 		
 	</div>
 
-
+	<footer>
+		<p><em>Copyright of Kenneth Brent Thomas</em></p>
+	</footer>
 
 
 </body>

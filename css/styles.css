@@ -6,6 +6,10 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	background:#F78183;
+}
 /*END base styles*/
 
 /*Begin form header*/
@@ -52,6 +56,8 @@
 
 
 /*Begin form*/
+
+
 fieldset {
 	border: none;
 	margin-left: 5%;
@@ -75,6 +81,11 @@ legend {
 	
 }
 
+#zip {
+	margin-bottom: 15px;
+	width: 50%;
+}
+
 .input {
 	margin: 5px 0;
 	background: #EBEBEB;
@@ -82,10 +93,92 @@ legend {
 	border-radius: 3px;
 	padding: 15px;
 	width:100%;
+	text-align: right;
+	font-style: italic;
+	font-size: 13px;
+	
+	
+	
 
 }
-.input:hover {
-background: #6D85F4;
+
+input:focus {
+	background:#C9C3FD;
+	border: solid 2px black;
+	transition-duration: .7s;
+	
 }
 
 
+
+
+form p {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+
+
+.check,
+.radio {
+	margin-right: 8px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+}
+
+#textbox {
+	height: 12em;
+}
+
+button {
+	color: antiquewhite;
+	background:#3F3F3F;
+	font-family: 'Vollkorn SC', serif;
+	height: 3em;
+	width: 100%;
+	margin: 2em 0;
+	border: none;
+	
+}
+
+button:hover {
+	background-color: antiquewhite;
+	color:#3F3F3F;
+	border-radius: 10px;
+	transition-duration: .5s;
+}
+
+footer {
+	background: #D2D2D2;
+	height: 8em;
+	text-align: center;
+	padding-top: 2em;
+	
+}
+
+
+@media (min-width: 768px){
+	.form-header,
+	.main-form {
+		max-width: 60%;
+		margin: auto;
+	}
+	
+	.form-header {
+		margin-bottom: .5em;
+	}
+	fieldset {
+		margin: 0;
+		padding: 0;
+	}
+	
+}
+
+@media (min-width:1024px) {
+	.form-header,
+	.main-form {
+		max-width: 50%
+	}
+}
+	
