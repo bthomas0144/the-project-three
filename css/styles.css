@@ -103,9 +103,10 @@ legend {
 }
 
 input:focus {
-	background:#C9C3FD;
+	background:#fff;
 	border: solid 2px black;
 	transition-duration: .7s;
+	
 	
 }
 
