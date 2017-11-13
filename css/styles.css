@@ -9,6 +9,8 @@
 
 body {
 	background:#F78183;
+	color: #3F3F3F;
+
 }
 /*END base styles*/
 
@@ -58,6 +60,7 @@ body {
 /*Begin form*/
 
 
+
 fieldset {
 	border: none;
 	margin-left: 5%;
@@ -83,7 +86,7 @@ legend {
 
 #zip {
 	margin-bottom: 15px;
-	width: 50%;
+	width: 30%;
 }
 
 .input {
@@ -102,14 +105,14 @@ legend {
 
 }
 
-input:focus {
+.input:focus {
 	background:#fff;
-	border: solid 2px black;
-	transition-duration: .7s;
+	transition-duration: .6s;
+	outline: none;
+	border-radius: 10px;
 	
 	
 }
-
 
 
 
@@ -160,6 +163,26 @@ footer {
 
 
 @media (min-width: 768px){
+	#flexit {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	
+	}
+	
+	#flexit input,
+	#flexit select
+
+   {
+    width: 75%;
+  }
+	
+	 #flexit label {
+    width: 25%;
+    align-self: center;
+  }
+	
+	
 	.form-header,
 	.main-form {
 		max-width: 60%;
@@ -174,12 +197,17 @@ footer {
 		padding: 0;
 	}
 	
-}
+	#flexit #zip {
+		width: 30%;
+	}
+	
+	
+
 
 @media (min-width:1024px) {
 	.form-header,
 	.main-form {
-		max-width: 50%
+		max-width: 55%
 	}
 }
 	
