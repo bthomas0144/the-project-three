@@ -23,17 +23,17 @@
 				<legend>Contact information</legend>
 				<div id="flexit">
 				<label for="name">Full Name</label>
-				<input type="text" placeholder="Required" class="input" id="name" for="" required><br />
+				<input type="text" placeholder="Required" class="input" id="name" name="Fullname" required><br />
 				<label for="email">Email</label>
-				<input type="email" placeholder="Required" class="input" id="email" required><br />
+				<input type="email" placeholder="Required" class="input" id="email" name="Email" required><br />
 				<label for="phone">Phone</label>
-				<input type="tel" class="input" id="phone" placeholder="Required" required><br>
+				<input type="tel" class="input" id="phone" placeholder="Required" name="telephone" required><br>
 				<label for="address">Street Address</label>
-				<input type="text" class="input" placeholder="Required" required><br>
+				<input type="text" class="input" id="address" placeholder="Required" name="Address" required><br>
 				<label for="city">City</label>
-				<input type="text" class="input" placeholder="Required" required><br>
+				<input type="text" class="input" id="city" placeholder="Required" name="city" required><br>
 				<label for="State">State</label>
-				<select id="State" class="input">
+				<select id="State" class="input" name="state">
 				<option value="none-selected" >Choose State</option>
                   <option value="alabama">Alabama</option>
                   <option value="alaska">Alaska</option>
@@ -87,7 +87,7 @@
                   <option value="wyoming">Wyoming</option>
                 </select><br>
 				<label for="zip">Zip code</label><br/>
-				<input type="text" class="input" id="zip" placeholder="Required" required><br>
+				<input type="text" class="input" id="zip" placeholder="Required" name="zipcode" required><br>
 				</div>
 			</fieldset>
 			
@@ -103,12 +103,12 @@
 					<input type="checkbox" class="check" id="javascript" name="news"><label for="javascript">Javascript News</label>
 					</div>
 					
-					<p> Newsletter format</p>
+					<p> Newsletter format</p><br>
 					
 					<input type="radio" class="radio" id="html-news" name="radAnswer"><label for="html-news">HTML</label><div></div>
-					<input type="radio" class="radio" id="plain-text" name="radAnswer"><label for="plain-text">Plain Text</label>
+					<input type="radio" class="radio" id="plain-text" name="radAnswer"><label for="plain-text">Plain Text</label><br>
 					
-					<p>Other topics you would like to discuss</p>
+					<label id="textarea">Other topics you would like to discuss</label>
 					
 					<textarea class="input" id="textbox" placeholder="Tell us what you think our company can do to improve."></textarea>
 					
